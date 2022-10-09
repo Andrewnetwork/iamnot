@@ -5,8 +5,8 @@ layout: default
 
   <header class="post-header">
     <p class="post-meta">
-      <div style="color: white; font-weight: bold">
-        {{ page.id }}
+      <div style="color: white; font-weight: bold; marigin-bottom: 5px;">
+        {{ post.id }}
       </div>
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
