@@ -15,7 +15,7 @@ layout: default
       {%- for post in site.posts -%}
         <div class="front_tile">
           <a href="{{ post.url | relative_url }}">
-              <img src="assets/{{ post.cover_image }}" style="border: 2px black solid; box-shadow: 3px 3px 5px 6px #ccc;" width="230" height="300"/>
+              <img src="assets/covers/{{ post.cover_image }}" style="border: 2px black solid; box-shadow: 3px 3px 5px 6px #ccc;" width="230" height="300"/>
           </a>
         </div>
       {%- endfor -%}
