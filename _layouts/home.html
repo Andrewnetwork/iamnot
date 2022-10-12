@@ -9,9 +9,8 @@ layout: default
 
   {{ content }}
 
-  <div style="text-align:center">
   {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
+    <div style="text-align:center">
       {%- for post in site.posts -%}
         <div class="front_tile">
           <a href="{{ post.url | relative_url }}">
@@ -19,7 +18,6 @@ layout: default
           </a>
         </div>
       {%- endfor -%}
-    </ul>
-  </div>
+    </div>
   {%- endif -%}
 </div>
